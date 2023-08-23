@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado das questões do Hackaton 22/08</title>
+    <script src="/JS exercises/exercicio1.js" defer></script>
+</head>
+<body>
+    <h3>Questões</h3>
+    <hr>
+    <span class="question">
+        1.Considere uma string s que pode ser formada por um conjunto de palavras e por espaços em branco. Codifique uma função que receba a string s e retorne o comprimento da última palavra nessa string.
+    </span>
+    <div class="sample-box">
+        <h4>Exemplo 1:</h4>
+            <span>Entrada s = "Olá mundo"<br>
+            Saída: 5<br>
+            Explicação: A última palavra "mundo" tem o comprimento 5</span>
+        <h4>Exemplo 2:</h4>
+            <span>Entrada s = "  Bora     Bill   "<br>
+            Saída: 4<br>
+            Explicação: A última palavra "Bill" tem o comprimento 4</span>
+    </div>
+    <div class="result">
+        <span>Espaço para a exibição da primeira resposta:<br></span>
+        <span id="result_1"> </span>
+    </div>
+    
+    <span class="question">
+        Escreva uma função que receba um número n e diga se ele é palito. Um número palito é um número definido seguindo o processo:
+        Considerando um número inteiro positivo, substitua o número pela soma dos quadrados de seus algarismos;
+        Repita o processo até que o número seja igual a 1 ou que o digito restante seja diferente de 1;
+        Os numeros que ao final do processo sejam iguais a 1 são palitos.
+        retorne true caso o número recebido na função seja palito e false caso não seja.    
+    </span>
+    <div class="sample-box">
+        <h4>Exemplo 1:</h4>
+            Entrada n = 19<br>
+            Saída: true<br>
+            Explicação: <br>
+            1² + 9² = 82<br>
+            8² + 2² = 68<br>
+            6² + 8² = 100<br>
+            1² + 0² + 0² = 1<br>
+        <h4>Exemplo 2:</h4>
+            <span>Entrada s = 14<br>
+                Saída: false<br>
+                Explicação:<br>
+                1² + 4² = 17<br>
+                1² + 7² = 50<br>
+                5² + 0² = 25<br>
+                2² + 5² = 29<br>
+                2² + 9² = 85<br>
+                8² + 5² = 89<br>
+                8² + 9² = 145<br>
+                1² + 4² + 5² = 42<br>
+                4² + 2² = 20<br>
+                2² + 0² = 4</span>
+        <h4>Exemplo 3:</h4>
+            <span>Entrada n = 6
+                Saída: false</span>
+    </div>
+    <div class="result">
+        <span>Espaço para a exibição da primeira resposta:<br></span>
+        <span id="result_1"> </span>
+    </div>
+</body>
+</html>
